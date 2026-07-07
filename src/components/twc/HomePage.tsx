@@ -88,7 +88,7 @@ function Hero() {
           {/* Floating badge */}
           <div className="absolute -bottom-4 md:bottom-6 right-2 md:right-6 bg-black/80 backdrop-blur border border-gold/30 px-6 py-5 text-center luxe-shadow">
             <p className="text-[9px] tracking-[0.3em] uppercase text-white/60 mb-1">Limited To</p>
-            <p className="font-serif text-4xl text-gold leading-none">25</p>
+            <p className="font-serif text-4xl text-gold leading-none">250{"\n\n"}</p>
             <p className="text-[9px] tracking-[0.3em] uppercase text-white/60 mt-1">Pieces Worldwide</p>
           </div>
         </div>
