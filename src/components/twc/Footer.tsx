@@ -33,7 +33,7 @@ export function Footer() {
           </div>
           {columns.map((col) => (
             <div key={col.title}>
-              <h4 className="eyebrow mb-6 not-serif" style={{ fontFamily: "var(--font-sans)" }}>
+              <h4 className="eyebrow mb-6">
                 {col.title}
               </h4>
               <ul className="space-y-3">
