@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { Header } from "@/components/twc/Header";
 import { Footer } from "@/components/twc/Footer";
 import ascensionAsset from "@/assets/ascension.png.asset.json";
