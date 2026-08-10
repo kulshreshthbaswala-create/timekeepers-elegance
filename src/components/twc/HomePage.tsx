@@ -321,7 +321,7 @@ function Craftsmanship() {
 const why = [
   { icon: Clock, t: "Time Will Change", d: "A philosophy of ambition, evolution, and legacy — worn on the wrist." },
   { icon: Award, t: "Swiss Inspired", d: "Master-crafted movements, engineered with Swiss precision." },
-  { icon: Gem, t: "Limited Editions", d: "Only 25 pieces worldwide per collection. Once gone, gone forever." },
+  { icon: Gem, t: "Limited Editions", d: "Only 250 pieces worldwide per collection. Once gone, gone forever." },
   { icon: Package, t: "Premium Packaging", d: "A hand-crafted case, gloves, warranty booklet and certificate." },
   { icon: Headphones, t: "Concierge Support", d: "White-glove service from selection through the life of your timepiece." },
   { icon: Shield, t: "2 Year Warranty", d: "International coverage on every timepiece we build." },
