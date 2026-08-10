@@ -6,11 +6,11 @@ import logoAsset from "@/assets/twc-logo.png.asset.json";
 const nav = [
   { label: "Shop", to: "/collections" },
   { label: "Collections", to: "/collections" },
-  { label: "Men", to: "/collections" },
-  { label: "Women", to: "/collections" },
-  { label: "Journal", to: "/collections" },
-  { label: "About", to: "/collections" },
-  { label: "Support", to: "/collections" },
+  { label: "Men", to: "/men" },
+  { label: "Women", to: "/women" },
+  { label: "Journal", to: "/journal" },
+  { label: "About", to: "/about" },
+  { label: "Support", to: "/support" },
 ];
 
 export function Header() {
