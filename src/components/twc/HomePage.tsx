@@ -64,10 +64,14 @@ function Hero() {
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <button className="btn-gold btn-gold-hover group">
+            <Link
+              to="/products/$slug"
+              params={{ slug: "ascension" }}
+              className="btn-gold btn-gold-hover group"
+            >
               Discover Ascension
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-            </button>
+            </Link>
             <button className="inline-flex items-center gap-3 text-white/80 hover:text-gold transition-colors group">
               <span className="h-10 w-10 rounded-full border border-gold/50 flex items-center justify-center group-hover:bg-gold/10 transition-colors">
                 <Play className="h-3.5 w-3.5 fill-gold text-gold" />
@@ -150,9 +154,9 @@ function Collections() {
             <span className="text-sm text-muted-foreground line-through">₹1,40,000</span>
           </div>
           <p className="text-[10px] tracking-[0.28em] uppercase text-gold mb-8">Launch Offer</p>
-          <button className="btn-ghost-gold self-start">
+          <Link to="/men" className="btn-ghost-gold self-start">
             Explore Collection <ArrowRight className="h-3.5 w-3.5" />
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -176,9 +180,9 @@ function Collections() {
             <span className="text-sm text-muted-foreground line-through">₹1,04,000</span>
           </div>
           <p className="text-[10px] tracking-[0.28em] uppercase text-gold mb-8">Launch Offer · Save ₹83,000</p>
-          <button className="btn-ghost-gold self-start">
+          <Link to="/women" className="btn-ghost-gold self-start">
             Explore Collection <ArrowRight className="h-3.5 w-3.5" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
@@ -217,10 +221,10 @@ function Philosophy() {
 
 /* ---------- BEST SELLERS ---------- */
 const bestSellers = [
-  { name: "Ascension", tag: "Limited Edition", price: "₹21,000", original: "₹1,40,000", img: ascensionAsset.url, cta: "View Details" },
-  { name: "Aurelia", tag: "Limited Edition", price: "₹21,000", original: "₹1,04,000", img: aureliaAsset.url, cta: "View Details" },
-  { name: "Chronos", tag: "Coming Soon", price: null, original: null, img: ascensionAsset.url, cta: "Notify Me" },
-  { name: "Elevate", tag: "Coming Soon", price: null, original: null, img: aureliaAsset.url, cta: "Notify Me" },
+  { slug: "ascension", name: "Ascension", tag: "Limited Edition", price: "₹21,000", original: "₹1,40,000", img: ascensionAsset.url, cta: "View Details" },
+  { slug: "aurelia", name: "Aurelia", tag: "Limited Edition", price: "₹21,000", original: "₹1,04,000", img: aureliaAsset.url, cta: "View Details" },
+  { slug: "chronos", name: "Chronos", tag: "Coming Soon", price: null, original: null, img: ascensionAsset.url, cta: "Notify Me" },
+  { slug: "elevate", name: "Elevate", tag: "Coming Soon", price: null, original: null, img: aureliaAsset.url, cta: "Notify Me" },
 ];
 
 function BestSellers() {
@@ -232,9 +236,9 @@ function BestSellers() {
             <p className="eyebrow mb-4">The Collection</p>
             <h2 className="font-serif text-4xl md:text-5xl text-white">Best Sellers</h2>
           </div>
-          <a href="#" className="hidden md:inline-flex items-center gap-2 text-[11px] tracking-[0.28em] uppercase text-gold hover:gap-3 transition-all">
+          <Link to="/collections" className="hidden md:inline-flex items-center gap-2 text-[11px] tracking-[0.28em] uppercase text-gold hover:gap-3 transition-all">
             View All Watches <ArrowRight className="h-3.5 w-3.5" />
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
