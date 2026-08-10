@@ -9,13 +9,15 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "TWC Watches — luxury-inspired timepieces. Discover Ascension and Aurelia, limited edition tourbillon skeletons in 18K rose gold. Only 25 pieces worldwide.",
+          "TWC Watches — luxury-inspired timepieces. Discover Ascension and Aurelia, limited edition tourbillon skeletons in 18K rose gold. Only 250 pieces worldwide.",
       },
       { property: "og:title", content: "TWC Watches — Ascension · Time Will Change" },
       {
         property: "og:description",
-        content: "Limited edition tourbillon skeleton timepieces. Swiss-inspired craftsmanship. Time Will Change.",
+        content: "Limited edition tourbillon skeleton timepieces. Swiss-inspired craftsmanship. Only 250 pieces worldwide.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
 });
