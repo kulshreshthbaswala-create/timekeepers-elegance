@@ -273,9 +273,19 @@ function BestSellers() {
                     → Coming Soon ←
                   </p>
                 )}
-                <button className="w-full py-3 border border-white/10 text-[10px] tracking-[0.28em] uppercase text-white/80 hover:border-gold hover:text-gold hover:bg-gold/5 transition-all">
-                  {p.cta}
-                </button>
+                {p.price ? (
+                  <Link
+                    to="/products/$slug"
+                    params={{ slug: p.slug }}
+                    className="inline-flex items-center justify-center w-full py-3 border border-white/10 text-[10px] tracking-[0.28em] uppercase text-white/80 hover:border-gold hover:text-gold hover:bg-gold/5 transition-all"
+                  >
+                    {p.cta}
+                  </Link>
+                ) : (
+                  <button className="w-full py-3 border border-white/10 text-[10px] tracking-[0.28em] uppercase text-white/80 hover:border-gold hover:text-gold hover:bg-gold/5 transition-all">
+                    {p.cta}
+                  </button>
+                )}
               </div>
             </div>
           ))}
