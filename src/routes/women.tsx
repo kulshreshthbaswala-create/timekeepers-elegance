@@ -34,7 +34,7 @@ function WomenPage() {
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Link to="/products/aurelia" className="group relative bg-[#0c0c0c] border border-white/5 hover:border-gold/30 transition-all duration-500">
+              <Link to="/products/$slug" params={{ slug: "aurelia" }} className="group relative bg-[#0c0c0c] border border-white/5 hover:border-gold/30 transition-all duration-500">
                 <div className="aspect-square overflow-hidden bg-black">
                   <img
                     src={aureliaAsset.url}
