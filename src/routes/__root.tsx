@@ -137,6 +137,13 @@ fbq('track', 'PageView');`,
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
+        {/* Meta Pixel (noscript) */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1543271143900462&ev=PageView&noscript=1" />`,
+          }}
+        />
         {children}
         <Scripts />
       </body>
