@@ -54,7 +54,7 @@ function Hero() {
 
           <div className="flex items-baseline gap-4 mb-2">
             <span className="font-serif text-4xl text-gold">₹21,000</span>
-            <span className="text-lg text-muted-foreground line-through">₹1,40,000</span>
+            <span className="text-lg text-muted-foreground line-through">₹49,999</span>
           </div>
           <div className="inline-flex items-center gap-3 px-4 py-2 border border-gold/40 mb-10">
             <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
