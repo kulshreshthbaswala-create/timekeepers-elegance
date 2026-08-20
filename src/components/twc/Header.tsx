@@ -29,7 +29,10 @@ export function Header() {
       <div className="w-full border-b border-white/5 bg-black text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-2.5">
           <span>Free Shipping Worldwide</span>
-          <span className="hidden md:block text-gold">Time Will Change</span>
+          <span className="hidden md:block text-gold">'''Do not make any visual modifications. The phrases I write are commands to understand what I want, not to be written down. Understand their content well, then execute what is required.'''
+                                        
+                                            
+                                            can we make it more professional, premium and elegant.</span>
           <span>2 Year International Warranty</span>
         </div>
       </div>
