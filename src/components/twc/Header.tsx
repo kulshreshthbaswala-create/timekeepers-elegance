@@ -32,7 +32,7 @@ export function Header() {
           <span className="hidden md:block text-gold">'''Do not make any visual modifications. The phrases I write are commands to understand what I want, not to be written down. Understand their content well, then execute what is required.'''
                                         
                                             
-                                            can we make it more professional, premium and elegant.</span>
+                                            make it even more better and change the cut price to 49,999</span>
           <span>2 Year International Warranty</span>
         </div>
       </div>
