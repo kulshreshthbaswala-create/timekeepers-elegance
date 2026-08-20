@@ -54,12 +54,12 @@ function Hero() {
 
           <div className="flex items-baseline gap-4 mb-2">
             <span className="font-serif text-4xl text-gold">₹21,000</span>
-            <span className="text-lg text-muted-foreground line-through">₹1,40,000</span>
+            <span className="text-lg text-muted-foreground line-through">₹49,999</span>
           </div>
           <div className="inline-flex items-center gap-3 px-4 py-2 border border-gold/40 mb-10">
             <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
             <span className="text-[10px] tracking-[0.28em] uppercase text-gold">
-              Launch Offer · Save ₹1,19,000
+              Launch Offer · Save ₹28,999
             </span>
           </div>
 
@@ -151,9 +151,9 @@ function Collections() {
           <p className="text-[11px] tracking-[0.28em] uppercase text-white/60 mb-6">Limited Edition</p>
           <div className="flex items-baseline gap-3 mb-2">
             <span className="font-serif text-3xl text-gold">₹21,000</span>
-            <span className="text-sm text-muted-foreground line-through">₹1,40,000</span>
+            <span className="text-sm text-muted-foreground line-through">₹49,999</span>
           </div>
-          <p className="text-[10px] tracking-[0.28em] uppercase text-gold mb-8">Launch Offer</p>
+          <p className="text-[10px] tracking-[0.28em] uppercase text-gold mb-8">Launch Offer · Save ₹28,999</p>
           <Link to="/men" className="btn-ghost-gold self-start">
             Explore Collection <ArrowRight className="h-3.5 w-3.5" />
           </Link>
@@ -177,9 +177,9 @@ function Collections() {
           <p className="text-[11px] tracking-[0.28em] uppercase text-white/60 mb-6">Limited Edition</p>
           <div className="flex items-baseline gap-3 mb-2">
             <span className="font-serif text-3xl text-gold">₹21,000</span>
-            <span className="text-sm text-muted-foreground line-through">₹1,04,000</span>
+            <span className="text-sm text-muted-foreground line-through">₹49,999</span>
           </div>
-          <p className="text-[10px] tracking-[0.28em] uppercase text-gold mb-8">Launch Offer · Save ₹83,000</p>
+          <p className="text-[10px] tracking-[0.28em] uppercase text-gold mb-8">Launch Offer · Save ₹28,999</p>
           <Link to="/women" className="btn-ghost-gold self-start">
             Explore Collection <ArrowRight className="h-3.5 w-3.5" />
           </Link>
@@ -221,8 +221,8 @@ function Philosophy() {
 
 /* ---------- BEST SELLERS ---------- */
 const bestSellers = [
-  { slug: "ascension", name: "Ascension", tag: "Limited Edition", price: "₹21,000", original: "₹1,40,000", img: ascensionAsset.url, cta: "View Details" },
-  { slug: "aurelia", name: "Aurelia", tag: "Limited Edition", price: "₹21,000", original: "₹1,04,000", img: aureliaAsset.url, cta: "View Details" },
+  { slug: "ascension", name: "Ascension", tag: "Limited Edition", price: "₹21,000", original: "₹49,999", img: ascensionAsset.url, cta: "View Details" },
+  { slug: "aurelia", name: "Aurelia", tag: "Limited Edition", price: "₹21,000", original: "₹49,999", img: aureliaAsset.url, cta: "View Details" },
   { slug: "chronos", name: "Chronos", tag: "Coming Soon", price: null, original: null, img: ascensionAsset.url, cta: "Notify Me" },
   { slug: "elevate", name: "Elevate", tag: "Coming Soon", price: null, original: null, img: aureliaAsset.url, cta: "Notify Me" },
 ];

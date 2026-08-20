@@ -21,8 +21,8 @@ const products: Record<string, {
     tagline: "Rise above ordinary.",
     tag: "Limited Edition",
     price: "₹21,000",
-    original: "₹1,40,000",
-    save: "₹1,19,000",
+    original: "₹49,999",
+    save: "₹28,999",
     description: "A masterpiece of precision and ambition. The Ascension features an open-heart tourbillon skeleton dial, 18K rose gold plating, and a 72-hour power reserve. Crafted for those who rise above ordinary — and leave a legacy.",
     image: ascensionAsset.url,
     specs: [
@@ -41,8 +41,8 @@ const products: Record<string, {
     tagline: "Elegance, eternal.",
     tag: "Limited Edition",
     price: "₹21,000",
-    original: "₹1,04,000",
-    save: "₹83,000",
+    original: "₹49,999",
+    save: "₹28,999",
     description: "The Aurelia captures timeless grace in a diamond-set rose gold case. A refined open-heart dial reveals the soul of the movement, while the polished bracelet catches light like jewellery. Made for moments that become memories.",
     image: aureliaAsset.url,
     specs: [
