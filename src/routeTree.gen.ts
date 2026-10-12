@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WomenRouteImport } from './routes/women'
 import { Route as SupportRouteImport } from './routes/support'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as MenRouteImport } from './routes/men'
 import { Route as JournalRouteImport } from './routes/journal'
 import { Route as CollectionsRouteImport } from './routes/collections'
@@ -26,6 +27,11 @@ const WomenRoute = WomenRouteImport.update({
 const SupportRoute = SupportRouteImport.update({
   id: '/support',
   path: '/support',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MenRoute = MenRouteImport.update({
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/collections': typeof CollectionsRoute
   '/journal': typeof JournalRoute
   '/men': typeof MenRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/women': typeof WomenRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/collections': typeof CollectionsRoute
   '/journal': typeof JournalRoute
   '/men': typeof MenRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/women': typeof WomenRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/collections': typeof CollectionsRoute
   '/journal': typeof JournalRoute
   '/men': typeof MenRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/support': typeof SupportRoute
   '/women': typeof WomenRoute
   '/products/$slug': typeof ProductsSlugRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/collections'
     | '/journal'
     | '/men'
+    | '/sitemap.xml'
     | '/support'
     | '/women'
     | '/products/$slug'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/collections'
     | '/journal'
     | '/men'
+    | '/sitemap.xml'
     | '/support'
     | '/women'
     | '/products/$slug'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/collections'
     | '/journal'
     | '/men'
+    | '/sitemap.xml'
     | '/support'
     | '/women'
     | '/products/$slug'
@@ -129,6 +141,7 @@ export interface RootRouteChildren {
   CollectionsRoute: typeof CollectionsRoute
   JournalRoute: typeof JournalRoute
   MenRoute: typeof MenRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SupportRoute: typeof SupportRoute
   WomenRoute: typeof WomenRoute
   ProductsSlugRoute: typeof ProductsSlugRoute
@@ -148,6 +161,13 @@ declare module '@tanstack/react-router' {
       path: '/support'
       fullPath: '/support'
       preLoaderRoute: typeof SupportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/men': {
@@ -201,6 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   CollectionsRoute: CollectionsRoute,
   JournalRoute: JournalRoute,
   MenRoute: MenRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SupportRoute: SupportRoute,
   WomenRoute: WomenRoute,
   ProductsSlugRoute: ProductsSlugRoute,

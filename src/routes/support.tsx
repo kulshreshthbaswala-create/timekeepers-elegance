@@ -4,6 +4,7 @@ import { Footer } from "@/components/twc/Footer";
 import { Mail, Phone, Clock, Shield, Truck, Package } from "lucide-react";
 
 export const Route = createFileRoute("/support")({
+  staticData: { sitemap: true },
   component: SupportPage,
   head: () => ({
     meta: [

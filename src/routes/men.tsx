@@ -5,6 +5,7 @@ import ascensionAsset from "@/assets/ascension.png.asset.json";
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/men")({
+  staticData: { sitemap: true },
   component: MenPage,
   head: () => ({
     meta: [

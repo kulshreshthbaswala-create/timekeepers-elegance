@@ -4,6 +4,7 @@ import { Footer } from "@/components/twc/Footer";
 import movementImg from "@/assets/movement.jpg";
 
 export const Route = createFileRoute("/about")({
+  staticData: { sitemap: true },
   component: AboutPage,
   head: () => ({
     meta: [

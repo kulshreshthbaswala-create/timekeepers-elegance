@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { HomePage } from "@/components/twc/HomePage";
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   component: HomePage,
   head: () => ({
     meta: [
