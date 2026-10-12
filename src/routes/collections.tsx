@@ -6,6 +6,7 @@ import aureliaAsset from "@/assets/aurelia.png.asset.json";
 import { ArrowRight, Heart } from "lucide-react";
 
 export const Route = createFileRoute("/collections")({
+  staticData: { sitemap: true },
   component: CollectionsPage,
   head: () => ({
     meta: [

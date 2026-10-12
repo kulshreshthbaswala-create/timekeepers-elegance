@@ -5,6 +5,7 @@ import movementImg from "@/assets/movement.jpg";
 import rocksImg from "@/assets/rocks-bg.jpg";
 
 export const Route = createFileRoute("/journal")({
+  staticData: { sitemap: true },
   component: JournalPage,
   head: () => ({
     meta: [
