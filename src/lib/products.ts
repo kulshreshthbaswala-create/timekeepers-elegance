@@ -1,5 +1,3 @@
-import ascensionAsset from "@/assets/ascension.png.asset.json";
-import aureliaAsset from "@/assets/aurelia.png.asset.json";
 
 export interface Product {
   name: string;
@@ -23,7 +21,7 @@ export const products: Record<string, Product> = {
     save: "₹28,999",
     description:
       "A masterpiece of precision and ambition. The Ascension features an open-heart tourbillon skeleton dial, 18K rose gold plating, and a 72-hour power reserve. Crafted for those who rise above ordinary — and leave a legacy.",
-    image: ascensionAsset.url,
+    image: "/ascension.png",
     specs: [
       { label: "Movement", value: "Manual-winding tourbillon" },
       { label: "Case", value: "316L stainless steel with 18K rose gold PVD" },
@@ -44,7 +42,7 @@ export const products: Record<string, Product> = {
     save: "₹28,999",
     description:
       "The Aurelia captures timeless grace in a diamond-set rose gold case. A refined open-heart dial reveals the soul of the movement, while the polished bracelet catches light like jewellery. Made for moments that become memories.",
-    image: aureliaAsset.url,
+    image: "/aurelia.png",
     specs: [
       { label: "Movement", value: "Automatic open-heart" },
       { label: "Case", value: "316L stainless steel with 18K rose gold PVD" },

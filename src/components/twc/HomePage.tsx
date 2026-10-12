@@ -1,8 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Header } from "@/components/twc/Header";
 import { Footer } from "@/components/twc/Footer";
-import ascensionAsset from "@/assets/ascension.png.asset.json";
-import aureliaAsset from "@/assets/aurelia.png.asset.json";
 import movementImg from "@/assets/movement.jpg";
 import rocksImg from "@/assets/rocks-bg.jpg";
 import {
@@ -85,7 +83,7 @@ function Hero() {
         <div className="relative fade-slow">
           <div className="relative float-slow">
             <img
-              src={ascensionAsset.url}
+              src={"/ascension.png"}
               alt="TWC Ascension — Limited Edition Tourbillon Skeleton"
               className="w-full h-auto"
             />
@@ -140,7 +138,7 @@ function Collections() {
       {/* For Him */}
       <div className="relative overflow-hidden bg-black min-h-[600px] group">
         <img
-          src={ascensionAsset.url}
+          src={"/ascension.png"}
           alt="Ascension collection"
           className="absolute inset-0 h-full w-full object-cover object-center opacity-80 group-hover:scale-105 transition-transform duration-[1500ms]"
         />
@@ -166,7 +164,7 @@ function Collections() {
         style={{ background: "linear-gradient(135deg, #3a2a1f 0%, #6b4a35 50%, #a07a55 100%)" }}
       >
         <img
-          src={aureliaAsset.url}
+          src={"/aurelia.png"}
           alt="Aurelia collection"
           className="absolute inset-0 h-full w-full object-cover object-center opacity-90 group-hover:scale-105 transition-transform duration-[1500ms]"
         />
@@ -221,10 +219,10 @@ function Philosophy() {
 
 /* ---------- BEST SELLERS ---------- */
 const bestSellers = [
-  { slug: "ascension", name: "Ascension", tag: "Limited Edition", price: "₹21,000", original: "₹49,999", img: ascensionAsset.url, cta: "View Details" },
-  { slug: "aurelia", name: "Aurelia", tag: "Limited Edition", price: "₹21,000", original: "₹49,999", img: aureliaAsset.url, cta: "View Details" },
-  { slug: "chronos", name: "Chronos", tag: "Coming Soon", price: null, original: null, img: ascensionAsset.url, cta: "Notify Me" },
-  { slug: "elevate", name: "Elevate", tag: "Coming Soon", price: null, original: null, img: aureliaAsset.url, cta: "Notify Me" },
+  { slug: "ascension", name: "Ascension", tag: "Limited Edition", price: "₹21,000", original: "₹49,999", img: "/ascension.png", cta: "View Details" },
+  { slug: "aurelia", name: "Aurelia", tag: "Limited Edition", price: "₹21,000", original: "₹49,999", img: "/aurelia.png", cta: "View Details" },
+  { slug: "chronos", name: "Chronos", tag: "Coming Soon", price: null, original: null, img: "/ascension.png", cta: "Notify Me" },
+  { slug: "elevate", name: "Elevate", tag: "Coming Soon", price: null, original: null, img: "/aurelia.png", cta: "Notify Me" },
 ];
 
 function BestSellers() {

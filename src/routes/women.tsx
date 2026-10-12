@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/twc/Header";
 import { Footer } from "@/components/twc/Footer";
-import aureliaAsset from "@/assets/aurelia.png.asset.json";
 import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/women")({
@@ -38,7 +37,7 @@ function WomenPage() {
               <Link to="/products/$slug" params={{ slug: "aurelia" }} className="group relative bg-[#0c0c0c] border border-white/5 hover:border-gold/30 transition-all duration-500">
                 <div className="aspect-square overflow-hidden bg-black">
                   <img
-                    src={aureliaAsset.url}
+                    src={"/aurelia.png"}
                     alt="Aurelia"
                     loading="lazy"
                     className="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
