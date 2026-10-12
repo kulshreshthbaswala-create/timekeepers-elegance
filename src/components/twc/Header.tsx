@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Search, User, Heart, ShoppingBag, Menu, X } from "lucide-react";
-import logoAsset from "@/assets/twc-logo.png.asset.json";
 
 const nav = [
   { label: "Shop", to: "/collections" },
@@ -55,7 +54,7 @@ export function Header() {
           </nav>
 
           <Link to="/" className="flex flex-col items-center gap-1 flex-shrink-0">
-            <img src={logoAsset.url} alt="TWC Watches" className="h-14 md:h-16 w-auto" />
+            <img src={"/twc-logo.png"} alt="TWC Watches" className="h-14 md:h-16 w-auto" />
           </Link>
 
           <div className="hidden lg:flex items-center justify-end gap-6 flex-1">

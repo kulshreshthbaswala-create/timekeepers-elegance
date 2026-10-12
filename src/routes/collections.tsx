@@ -1,8 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/twc/Header";
 import { Footer } from "@/components/twc/Footer";
-import ascensionAsset from "@/assets/ascension.png.asset.json";
-import aureliaAsset from "@/assets/aurelia.png.asset.json";
 import { ArrowRight, Heart } from "lucide-react";
 
 export const Route = createFileRoute("/collections")({
@@ -27,7 +25,7 @@ const watches = [
     tag: "Limited Edition",
     price: "₹21,000",
     original: "₹49,999",
-    img: ascensionAsset.url,
+    img: "/ascension.png",
     gender: "Men",
   },
   {
@@ -36,7 +34,7 @@ const watches = [
     tag: "Limited Edition",
     price: "₹21,000",
     original: "₹49,999",
-    img: aureliaAsset.url,
+    img: "/aurelia.png",
     gender: "Women",
   },
   {
@@ -45,7 +43,7 @@ const watches = [
     tag: "Coming Soon",
     price: null,
     original: null,
-    img: ascensionAsset.url,
+    img: "/ascension.png",
     gender: "Men",
   },
   {
@@ -54,7 +52,7 @@ const watches = [
     tag: "Coming Soon",
     price: null,
     original: null,
-    img: aureliaAsset.url,
+    img: "/aurelia.png",
     gender: "Women",
   },
 ];

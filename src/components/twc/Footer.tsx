@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/twc-logo.png.asset.json";
 import { Instagram, Facebook, Youtube } from "lucide-react";
 
 const columns = [
@@ -48,7 +47,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 mb-16">
           <div className="col-span-2 lg:col-span-2">
             <Link to="/">
-              <img src={logoAsset.url} alt="TWC Watches" className="h-20 w-auto mb-6" />
+              <img src={"/twc-logo.png"} alt="TWC Watches" className="h-20 w-auto mb-6" />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Luxury-inspired timepieces engineered to defy time. Crafted for those who rise, evolve, and leave a legacy.
